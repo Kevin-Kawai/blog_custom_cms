@@ -1,0 +1,5 @@
+<%= render(Blog::HeaderComponent.new(false)) %>
+<%= render(Blog::PostComponent.new(title: "hello", color: "red", hello_world: false)) do %>
+  <div>Wahoo</div>
+<% end %>
+<%= render(Blog::FooterComponent.new) %>
